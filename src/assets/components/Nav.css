@@ -134,7 +134,7 @@
 }
 
 .header .last_header .nav{
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .header .last_header .nav ul{ 
@@ -150,5 +150,25 @@
     margin-right: 20px;
     text-decoration: none;
     color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header .last_header .nav ul li .link:hover{
+    color: #fed700;
+}
+
+.header .last_header .offer{
+    margin-right: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: #fed700;
+}
+
+.header .last_header .offer p{
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #232323;
+    font-size: 14px;
     font-weight: 600;
 }

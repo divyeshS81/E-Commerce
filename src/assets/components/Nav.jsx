@@ -2,7 +2,7 @@ import React from 'react'
 import './Nav.css'
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from 'react-router-dom';
-import Logo from '../../image/logo.webp';
+import Logo from '../../../public/image/logo.webp';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { MdLocalShipping } from 'react-icons/md'
 import { FiLogIn, FiLogOut } from 'react-icons/fi';

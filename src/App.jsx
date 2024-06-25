@@ -1,6 +1,7 @@
 import React from 'react'
-import Nav from './assets/components/Nav'
 import { BrowserRouter } from 'react-router-dom'
+import Nav from './assets/components/Nav'
+import Rout from './assets/components/Rout'
 
 
 
@@ -9,6 +10,7 @@ const App = () => {
    <>
     <BrowserRouter>
       <Nav />
+      <Rout />
     </BrowserRouter>
    </>
   )
