@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Shop.css"
 import Homeproduct from './home_product'
 import { AiFillEye, AiFillHeart } from 'react-icons/ai'
 
-const Shop = ({shop, Filter, allcatefilter}) => {
+const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
+
+    const [showDetail,setShowDetail] = useState(false)
+    const detailpage = () =>{
+        setShowDetail(true
+        )
+    }
   return (
     <>
+    {
+        showDetail ?
+        <>
+        <div className="product_detail">
+        
+        </div>
+        </>:
+        null
+    }
+    
         <div className="shop">
             <h2># Shop</h2>
             <p>Home .shop</p>
@@ -53,13 +69,13 @@ const Shop = ({shop, Filter, allcatefilter}) => {
                                                         <img src={curElm.image} alt="" />
                                                         <div className="icon">
                                                             <li> <AiFillHeart /></li>
-                                                            <li> <AiFillEye /></li>
+                                                            <li onClick={detailpage}> <AiFillEye /></li>
                                                         </div>
                                                     </div>
                                                     <div className="detail">
                                                         <h3>{curElm.Name}</h3>
                                                         <p>${curElm.price}</p>
-                                                        <button>Add To Cart</button>
+                                                        <button onClick={() => addtocart (curElm)}>Add To Cart</button>
                                                     </div>
                                                 </div>
                                             </>

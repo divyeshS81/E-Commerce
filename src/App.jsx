@@ -42,28 +42,28 @@ const App = () => {
   }
 }
 
-  // const addtocart = (product) =>
-  // {
-  //   const exist = cart.find((x) => {
-  //     return x.id === product.id
-  //   })
-  //   if(exist)
-  //   {
-  //     alert("This product is alleardy added in cart")
-  //   }
-  //   else
-  //   {
-  //     setCart([...cart, {...product, qty:1}])
-  //     alert("Added To cart")
-  //   }
-  // }
-  //  console.log(cart)
+  const addtocart = (product) =>
+  {
+    const exist = cart.find((x) => {
+      return x.id === product.id
+    })
+    if(exist)
+    {
+      alert("This product is alleardy added in cart")
+    }
+    else
+    {
+      setCart([...cart, {...product, qty:1}])
+      alert("Added To cart")
+    }
+  }
+   console.log(cart)
 
   return (
     <>
       <BrowserRouter>
         <Nav search={search} setSearch={setSearch} searchproduct={searchproduct}/>
-        <Rout shop={shop} Filter={Filter} allcatefilter={allcatefilter} />
+        <Rout setCart={setCart} cart={cart} shop={shop} Filter={Filter} allcatefilter={allcatefilter} addtocart={addtocart} />
         <Footer />
       </BrowserRouter>
     </>

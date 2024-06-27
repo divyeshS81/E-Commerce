@@ -71,9 +71,9 @@ const Footer = () => {
                     <div className='box'>
                         <h3>contact us</h3>
                         <ul>
-                            <li>4005, Silver Business PointIndia</li>
-                            <li>+(012)99999999</li>
-                            <li>info@gmail.com</li>
+                            <li>2312, Rk World Tower, Rajkot</li>
+                            <li>+(91)8140184084</li>
+                            <li>divyeshsarvaiya999@gmail.com</li>
                         </ul>
                     </div>
                 </div>

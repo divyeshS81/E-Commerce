@@ -7,7 +7,7 @@ import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube } from 'r
 import banner2 from "../../../public/image/Multi-banner-2.avif";
  
 
-const Home = () => {
+const Home = ({addtocart}) => {
     const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
     const [newProduct, setNewProduct] = useState([]);
     const [featuredProduct, setFeaturdProduct] =  useState([])
@@ -79,7 +79,7 @@ const Home = () => {
                                             <div className="info">
                                                 <h3>{curElm.Name}</h3>
                                                 <p>${curElm.price}</p>
-                                                <button className='btn'>Add To Cart</button>
+                                                <button className='btn' onClick={() => addtocart (curElm)}>Add To Cart</button>
                                             </div>
                                         </div>
                                     </React.Fragment>

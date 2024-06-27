@@ -85,7 +85,7 @@ const Nav = ({search ,setSearch, searchproduct}) => {
                 <ul>
                     <li><Link to='/' className='link'>Home</Link></li>
                     <li><Link to='/shop' className='link'>Shop</Link></li>
-                    <li><Link to='/collection' className='link'>Collection</Link></li>
+                    <li><Link to='/cart' className='link'>Cart</Link></li>
                     <li><Link to='/about' className='link'>About</Link></li>
                     <li><Link to='/contact' className='link'>Contect</Link></li>
                 </ul>
