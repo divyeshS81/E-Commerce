@@ -8,7 +8,7 @@ import { MdLocalShipping } from 'react-icons/md'
 import { FiLogIn, FiLogOut } from 'react-icons/fi';
 import { CiLogout, CiUser } from 'react-icons/ci';
 
-const Nav = () => {
+const Nav = ({search ,setSearch, searchproduct}) => {
 
      const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   
@@ -29,8 +29,8 @@ const Nav = () => {
                 <img src={Logo} alt="" />
             </div>
             <div className="search_box">
-                <input type="text" value="" placeholder='search' />
-                <button><AiOutlineSearch/></button>
+                <input type="text" value={search} placeholder='search' onChange={(e) => setSearch(e.target.value)} />
+                <button onClick={ searchproduct}><AiOutlineSearch/></button>
             </div>
             {
                 isAuthenticated ? 

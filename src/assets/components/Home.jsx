@@ -5,6 +5,7 @@ import Homeproduct from './home_product';
 import { AiFillEye, AiFillHeart, AiOutlineShoppingCart } from 'react-icons/ai';
 import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoYoutube } from 'react-icons/bi';
 import banner2 from "../../../public/image/Multi-banner-2.avif";
+ 
 
 const Home = () => {
     const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
